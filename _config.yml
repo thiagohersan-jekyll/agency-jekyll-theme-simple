@@ -1,46 +1,14 @@
 url: https://y7kim.github.io
-baseurl: /agency-jekyll-theme/
+baseurl: /agency-jekyll-theme-simple/
+port: 4666
+permalink: /:title/
+encoding: utf-8
 
 # Site settings
 title: Awesome Title
 email: your-email@domain.com
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 
-
-# Team names, titles and social links
-people:
-- name: Kay Garland
-  pic: 1
-  position: Lead Designer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
-
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: linkedin
-      url: #
-
-- name: Diana Petersen
-  pic: 3
-  position: Lead Developer
-  social:
-    - title: twitter
-      url: #
-    - title: facebook
-      url: #
-    - title: google-plus
-      url: #
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
@@ -62,4 +30,71 @@ address:
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+include: ['_pages']
+exclude: [.git, .gitignore, .sass-cache, README.md, jekyllbuild]
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      type: "standard"
+      homedisplay: "featimg"
+
+# prose.io
+prose:
+  media: 'img/portfolio'
+  ignore:
+    - .gitignore
+    - _config.yml
+    - _layouts
+    - _includes
+    - _data
+    - _plugins
+    - css
+    - js
+    - mail
+    - LICENSE
+    - CNAME
+    - README.md
+    - index.html
+    - style.css
+    - feed.xml
+    - img/favicons
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "homedisplay"
+        field:
+          element: "hidden"
+          value: "featimg"
+      - name: "title"
+        field:
+          element: "text"
+          label: "nome da página"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "escolha um url para essa página"
+          placeholder: "/url-da-pagina/"
+      - name: "nav-title"
+        field:
+          element: "text"
+          label: "nome da página para o menu (deixar em branco se não quiser no menu)"
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "descrição curta da página (deixar em branco se não quiser que página apareça na home)"
+      - name: "cover-image"
+        field:
+          element: "text"
+          label: "imagem de capa para a página (tem que ser .jpg por enquanto)"
+          placeholder: "horta2.jpg"
+
+
