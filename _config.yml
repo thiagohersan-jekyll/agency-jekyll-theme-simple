@@ -35,14 +35,11 @@ exclude: [.git, .gitignore, .sass-cache, README.md, jekyllbuild]
 
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
-      layout: "post"
-      type: "standard"
-      homedisplay: "featimg"
+      layout: "default"
 
 # prose.io
 prose:
@@ -69,32 +66,26 @@ prose:
       - name: "layout"
         field:
           element: "hidden"
-          value: "page"
-      - name: "homedisplay"
-        field:
-          element: "hidden"
-          value: "featimg"
+          value: "default"
       - name: "title"
         field:
           element: "text"
           label: "nome da página"
-      - name: "permalink"
+      - name: "subtitle"
         field:
           element: "text"
-          label: "escolha um url para essa página"
-          placeholder: "/url-da-pagina/"
-      - name: "nav-title"
-        field:
-          element: "text"
-          label: "nome da página para o menu (deixar em branco se não quiser no menu)"
+          label: "subtitutlo do projeto"
       - name: "description"
         field:
           element: "textarea"
-          label: "descrição curta da página (deixar em branco se não quiser que página apareça na home)"
-      - name: "cover-image"
+          label: "descrição curta do projeto"
+      - name: "img"
         field:
           element: "text"
-          label: "imagem de capa para a página (tem que ser .jpg por enquanto)"
-          placeholder: "horta2.jpg"
-
-
+          label: "imagem de capa para o projeto"
+          placeholder: "roundicons.png"
+      - name: "modal-id"
+        field:
+          element: "number"
+          label: "posição do projeto"
+          placeholder: "6"
