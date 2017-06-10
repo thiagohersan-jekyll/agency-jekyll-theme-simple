@@ -61,8 +61,13 @@ prose:
           element: "text"
           label: "imagem de capa para o projeto"
           placeholder: "roundicons.png"
+      - name: "thumbnail"
+        field:
+          element: "text"
+          label: "imagem reduzida do projeto para a home (400 x 289 pixels)"
+          placeholder: "roundicons-thumbnail.png"
       - name: "modal-id"
         field:
           element: "number"
-          label: "posição do projeto"
+          label: "número do projeto (para dar ordem na home)"
           placeholder: "6"
