@@ -52,10 +52,11 @@ prose:
         field:
           element: "text"
           label: "subtitutlo do projeto"
-      - name: "description"
+      - name: "video"
         field:
-          element: "textarea"
-          label: "descrição do projeto. Esse é o texto principal que explica o projeto."
+          element: "text"
+          label: "código de embed de algum vídeo no youtube ou vimeo."
+          placeholder: "//player.vimeo.com/video/165527282?title=0&amp;byline=0&amp;portrait=0&amp;color=ff0179"
       - name: "img"
         field:
           element: "text"
