@@ -55,7 +55,7 @@ prose:
       - name: "description"
         field:
           element: "textarea"
-          label: "descrição curta do projeto"
+          label: "descrição do projeto. Esse é o texto principal que explica o projeto."
       - name: "img"
         field:
           element: "text"
@@ -66,8 +66,3 @@ prose:
           element: "text"
           label: "imagem reduzida do projeto para a home (400 x 289 pixels)"
           placeholder: "roundicons-thumbnail.png"
-      - name: "modal-id"
-        field:
-          element: "number"
-          label: "número do projeto (para dar ordem na home)"
-          placeholder: "6"
