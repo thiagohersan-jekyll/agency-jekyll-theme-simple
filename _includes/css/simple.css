@@ -1,3 +1,32 @@
+.img-thumbnail-container {
+  width: 100%;
+  overflow: hidden;
+  max-height: 289px;
+}
+
+@media (min-width: 770px) {
+  .img-thumbnail-container {
+    max-height: 261px;
+  }
+}
+
+@media (min-width: 992px) {
+  .img-thumbnail-container {
+    max-height: 222px;
+  }
+}
+
+@media (min-width: 1210px) {
+  .img-thumbnail-container {
+    max-height: 261px;
+  }
+}
+
+.img-thumbnail {
+  width: 100%;
+  max-width: 400px;
+}
+
 .video-wrapper-16x9 {
   padding-bottom: 56.25%;
 }

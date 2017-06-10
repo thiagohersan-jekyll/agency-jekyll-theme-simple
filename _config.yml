@@ -47,11 +47,11 @@ prose:
       - name: "title"
         field:
           element: "text"
-          label: "nome da página"
+          label: "nome do projeto"
       - name: "subtitle"
         field:
           element: "text"
-          label: "subtitutlo do projeto"
+          label: "subtitulo do projeto"
       - name: "video"
         field:
           element: "text"
@@ -62,8 +62,3 @@ prose:
           element: "text"
           label: "imagem de capa para o projeto"
           placeholder: "roundicons.png"
-      - name: "thumbnail"
-        field:
-          element: "text"
-          label: "imagem reduzida do projeto para a home (400 x 289 pixels)"
-          placeholder: "roundicons-thumbnail.png"
