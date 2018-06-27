@@ -1,7 +1,7 @@
 title: Awesome Title
 
-url: https://y7kim.github.io
-baseurl: ''
+url: https://thiagohersan-jekyll.github.io
+baseurl: 'agency-jekyll-theme-simple/'
 port: 4666
 permalink: /:title/
 encoding: utf-8
